@@ -1,11 +1,17 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
 body{
-    background-color: rgb(243, 240, 114);    /*  background color of the whole page */
+    background-color: rgb(252, 252, 252);    /*  background color of the whole page */
 
     margin: 0;
     padding: 0;
     
     /* font for the whole page  */
-    font-family: 'Times New Roman', Times, serif;
+    font-family: 'Outfit';
     font-weight: bold;
 
     text-align: center; /* to allign the items to the centre of the bg box */
@@ -13,7 +19,7 @@ body{
     /* flex properties */
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-around;
     height: 100vh;
 
 }
@@ -25,30 +31,99 @@ body{
     padding: 20px;
     width: 60%;
     max-width: 700px;
-    align-items: center;
+   
+    align-items: start;
+   
     justify-content: center;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
     box-sizing: border-box;
 
 }
 
-.but{
-    margin: 10px;
-    padding: 15px;
-    border-radius: 40px;
-    cursor: pointer;
+.title{
+    font-weight: bold;
+    color: rgb(24, 42, 82);
+    font-size: 20px;
+    margin-bottom: 30px;
+
 }
 
-.message{
-    border-radius: 10px;
-    padding: 5px;
-    cursor: pointer;
+.title hr{
+    border: none;
+    width: 180px;
+    height: 4px;
+    background-color: black;
+    border-radius: 20px;
+    margin: 0 0 10px 90px;
     
 }
-    
+
+.form{
+    font-size: 20px;
+}
+
+
+.box:focus{
+    border: 2px solid blue;
+}
+
+.but_main{
+    margin: 30px;
+}
+
+
 .box{
     border-radius: 20px;
     padding: 5px;
     margin: 5px;
     cursor: pointer;
+    border: none;
+    outline: none;
+
+}
+
+
+
+
+.message{
+    border-radius: 10px;
+    padding: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+   
+    font-weight: lighter;
+
+    border: none;
+    outline: none;
+    
+}
+
+.message::placeholder{
+    color: rgb(88, 146, 136);
+    font-size: 15px;
+}
+    
+
+
+/* Buttons styling  */
+
+.but{
+    margin: 10px;
+    padding: 15px;
+    border-radius: 40px;
+    cursor: pointer;
+    background-color: rgb(88, 146, 136);
+    border: none;
+    font-weight: bold;
+    width: 100px;
+}
+
+.reset button{_
+
+    margin-left: 40px;
+
+}
+
+.cubmit button{
+    margin-right: 50px;
 }
