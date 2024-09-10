@@ -21,22 +21,35 @@ body{
     align-items: center;
     justify-content: space-around;
     height: 100vh;
+    align-content: center;
 
 }
 
-.boxbg{
+.left{
     
     background-color: rgb(83, 202, 241) ;
     border-radius: 20px;
     padding: 20px;
-    width: 60%;
+
+
+    width: 30%;
     max-width: 700px;
+    height: 90vh;
+    max-height: 90vh;
+
+    display: flex;
    
     align-items: start;
    
     justify-content: center;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
     box-sizing: border-box;
+
+    flex-grow: 0;
+    flex-shrink: 0;
+    min-width: 200px;
+
+    
 
 }
 
@@ -118,7 +131,7 @@ body{
     width: 100px;
 }
 
-.reset button{_
+.reset button{
 
     margin-left: 40px;
 
@@ -126,4 +139,13 @@ body{
 
 .cubmit button{
     margin-right: 50px;
+}
+
+
+
+/* editing the right side part - image */
+
+
+.right img{
+    width: 800px;
 }
